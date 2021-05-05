@@ -218,7 +218,7 @@ def triadic_closure(G):
                     triadic_list.append(triad)
                     t_list = sorted([G.edges[a, b]['timestamp'], G.edges[a, common]
                                     ['timestamp'], G.edges[b, common]['timestamp']])
-                    print("the friendship between {}, {} and {} take {} seconds".format(
+                    print("the friendship between {}, {} and {} takes {} seconds".format(
                         a, b, common, (t_list[2] - t_list[1])))
                     timestamp_list.append((t_list[2] - t_list[1]))
                     n_tria_clo += 1
